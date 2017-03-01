@@ -1,3 +1,21 @@
-body {
-  background-color: yellow;
-}
+// *************************************
+//
+//   Enjoei
+//   -> Manifest
+//
+// *************************************
+
+@import 'normalize';
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+@import 'foundation/config';
+@import 'foundation/base';
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+@import 'components/instructions';
