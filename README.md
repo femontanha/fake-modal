@@ -9,10 +9,14 @@
 
 This project uses `NodeJS` and `NPM`. Install all dependencies running:
 
-```npm i```
+```
+npm i
+```
 
-## Server
+## Running Server
 
 We use `GulpJS` as taskrunner to run our server and serve our assets.
 
-Run ```gulp``` in your terminal to see the project.
+```
+gulp
+```
