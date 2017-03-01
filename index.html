@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>enjoei - teste front-end</title>
+    <link rel="icon" type="image/x-icon" href="https://www.enjoei.com.br/favicon.ico" />
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/1.6.2/jquery.mockjax.min.js"></script>
+    <script>$.mockjax({ url: /.*\/api\/newsletter/, responseText: { status: 'success', message: 'email cadastrado com sucesso' }});</script>
+
+    <style>
+      .c-instructions {
+        display: block;
+        width: 85%;
+        max-width: 500px;
+        margin: 8% auto;
+      }
+
+      .c-instructions__logo {
+        display: block;
+        margin: 0 0 8%;
+      }
+
+      .c-instructions__description {
+        margin: 0;
+        font-size: 14px;
+        font-family: Sans-serif;
+        line-height: 22px;
+        color: #555555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="c-instructions">
+      <img class="c-instructions__logo"
+        src="https://assets3.enjoei.com.br/assets/v2/shared/brand/logo-desktop-x1-c6efd4344c5d7ef839202be76c153e77.png"
+        alt="enjoei :P">
+
+      <p class="c-instructions__description">
+        precisamos que uma modal abra quando o
+        usuário clicar <strong>aqui</strong>.
+        <br><br>
+        o desenho da modal, que deve ser responsiva,
+        está incluído na pasta que enviamos a você.
+        <br><br>
+        quando o formulário da modal é enviado, os
+        dados devem ser postados com ajax em
+        <strong>/api/newsletter</strong> e, ao
+        retornar sucesso, a modal deve ser fechada.
+        <br><br>
+        (já foi feito um retorno falso para a url
+        da api, você só precisa fazer o post)
+        <br><br>
+        você pode subir um servidor local com
+        <strong>php -S 0.0.0.0:8000</strong>,
+        <strong>python -m SimpleHTTPServer</strong> ou
+        <strong>ruby -run -ehttpd . -p 8000</strong>.
+        <br><br>
+        fica a seu critério utilizar ou não qualquer
+        biblioteca, ferramenta ou convenção para
+        finalizar a tarefa.
+        <br><br>
+        você deve entregar o teste em um
+        repositório git, com um commit inicial
+        indicando o momento do início do teste.
+      </p>
+    </div>
+  </body>
+</html>
