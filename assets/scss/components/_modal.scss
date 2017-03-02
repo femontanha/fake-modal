@@ -8,16 +8,20 @@
 $component: c-modal;
 
 .#{ $component } {
+	transition: all 300ms ease-in;
 	align-items: center;
 	justify-content: center;
   background-color: $modal-background;
   bottom: 0;
-  display: none;
+	display: flex;
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 10;
+
+	opacity: 0;
+	visibility: hidden;
 }
 
 // -------------------------------------
@@ -27,7 +31,9 @@ $component: c-modal;
 // ----- Show ----- //
 
 .#{ $component }--show {
-  display: flex;
+	transition: all 300ms ease-out;
+	opacity: 1;
+	visibility: visible;;
 }
 
 // -------------------------------------
@@ -68,6 +74,29 @@ $component: c-modal;
     content: 'X';
     font-size: rem(25px);
   }
+}
+
+// ----- Feedback ----- //
+
+.#{ $component }-feedback {
+	background-color: $modal-feedback-background;
+	color: $modal-feedback-color;
+	height: 0;
+	opacity: 0;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 500ms ease-in;
+  visibility: hidden;
+}
+
+// show
+
+.#{ $component }-feedback--show {
+	height: auto;
+	margin: rem(30px);
+	opacity: 1;
+	padding: rem(15px);
+	visibility: visible;
 }
 
 // ----- Header ----- //
