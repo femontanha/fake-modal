@@ -8,20 +8,19 @@
 $component: c-modal;
 
 .#{ $component } {
-	transition: all 300ms ease-in;
 	align-items: center;
+	display: flex;
 	justify-content: center;
+	opacity: 0;
+	transition: all 300ms ease-in;
+	visibility: hidden;
   background-color: $modal-background;
   bottom: 0;
-	display: flex;
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 10;
-
-	opacity: 0;
-	visibility: hidden;
 }
 
 // -------------------------------------
@@ -30,9 +29,9 @@ $component: c-modal;
 
 // ----- Show ----- //
 
-.#{ $component }--show {
-	transition: all 300ms ease-out;
+.#{ $component }--opend {
 	opacity: 1;
+	transition: all 300ms ease-out;
 	visibility: visible;;
 }
 
@@ -91,12 +90,18 @@ $component: c-modal;
 
 // show
 
-.#{ $component }-feedback--show {
+.#{ $component }-feedback--opend {
+	font-size: rem(14px);
 	height: auto;
-	margin: rem(30px);
+	margin: rem(30px) auto;
+	max-width: rem(435px);
 	opacity: 1;
 	padding: rem(15px);
 	visibility: visible;
+
+	@include respond-to($g-s) {
+    font-size: rem(16px);
+  }
 }
 
 // ----- Header ----- //
