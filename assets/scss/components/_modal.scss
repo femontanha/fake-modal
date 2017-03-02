@@ -1,0 +1,75 @@
+// *************************************
+//
+//   Modal
+//   -> Individual style containers
+//
+// *************************************
+
+$component: c-modal;
+
+.#{ $component } {
+	align-items: center;
+	justify-content: center;
+  background-color: $modal-background;
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Show ----- //
+
+.#{ $component }--show {
+  display: flex;
+}
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Content ----- //
+
+.#{ $component }-content {
+  background-color: $modal-content-background;
+  border-radius: $b-borderRadius;
+  color: $modal-text;
+  margin: rem(15px);
+  padding: rem(30px);
+  z-index: 2;
+}
+
+// ----- Header ----- //
+
+.#{ $component }-header {
+  margin-bottom: rem(10px);
+}
+
+// ----- Header Title ----- //
+
+.#{ $component }-header__title {
+  font-weight: $b-fontSemiBold;
+  text-align: center;
+  margin: 0 0 rem(25px);
+}
+
+// ----- Header Text ----- //
+
+.#{ $component }-header__text {
+  font-size: rem(14px);
+  max-width: rem(435px);
+  text-align: center;
+}
+
+// ----- Form ----- //
+
+.#{ $component }-form {
+  margin: 0 auto;
+  max-width: rem(375px);
+}

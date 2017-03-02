@@ -48,14 +48,37 @@
 
 // ----- Base ----- //
 
-$c-text: #555555 !default;
+$c-main-color: #EA5653;
+$c-text: #555555;
+
+// ----- Components ----- //
+
+$modal-background: rgba(0, 0, 0, 0.85);
+$modal-content-background: $c-main-color;
+$modal-text: #FFFFFF;
+
+$formInput-background: #FFFFFF;
+$formInput-border: #EDEAE8;
+$formInput-color: #5B5854;
+
+$formSubmit-color: $c-main-color;
+$formSubmit-background-hover: #FAFAFA;
 
 // -------------------------------------
 //   Base
 // -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 5px;
+$b-inputBorderRadius: 3px;
+$b-borderStyle: solid;
+$b-borderWidth: 2px;
 
 // ----- Typography ----- //
 
 $b-fontFamily: 'Proxima Nova';
 $b-fontSize: 16px;
 $b-lineHeight: 1.2;
+$b-fontSemiBold: 400;
+$b-fontBold: 600;

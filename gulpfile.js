@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var server = require('gulp-server-livereload');
-var bourbon = require('node-bourbon').includePaths;
 var normalize = require('node-normalize-scss').includePaths;
 
 gulp.task('webserver', ['watch'], function() {
@@ -19,7 +18,7 @@ gulp.task('webserver', ['watch'], function() {
 gulp.task('sass', function () {
   return gulp.src('./assets/scss/**/*.scss')
     .pipe(sass({
-      includePaths: [].concat(bourbon, normalize),
+      includePaths: [].concat(normalize),
       outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(gulp.dest('./assets/css-min/'));

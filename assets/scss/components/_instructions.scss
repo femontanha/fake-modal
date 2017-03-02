@@ -10,7 +10,7 @@ $component: c-instructions;
 .#{ $component } {
   display: block;
   margin: 8% auto;
-  max-width: 500px;
+  max-width: rem(500px);
   width: 85%;
 }
 
@@ -28,7 +28,7 @@ $component: c-instructions;
 // ----- Description ----- //
 
 .#{ $component }__description {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: rem(14px);
+  line-height: rem(22px);
   margin: 0;
 }
