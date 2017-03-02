@@ -32,3 +32,17 @@
 @function rem($pxval) {
   @return ($pxval / $b-fontSize) * 1rem;
 }
+
+// ----- Respond-to ----- //
+// -> Generates a media query
+//
+// $val - the breakpoint size
+// $query - the type of query ('min-width', 'max-width')
+// $media - the media type ('screen', 'print', etc.)
+// @content - the generated content within the mixin
+
+@mixin respond-to($val, $query: min-width, $media: screen) {
+  @media #{$media} and ($query: $val) {
+    @content
+  }
+}
