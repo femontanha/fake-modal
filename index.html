@@ -50,7 +50,7 @@
     </div>
 
     <!-- ./include modal -->
-    <section id="modal" class="c-modal c-modal--show">
+    <section id="modal" class="c-modal">
       <div class="c-modal-content">
         <span class="c-modal-close" aria-label="close">fechar</span>
         <div class="c-modal-header">
@@ -60,9 +60,10 @@
           <p class="c-modal-header__text">
             receba novidades do site mais legal do brasiô, coloca seu nome e email ai embaixo e manda bala :)
           </p>
+          <p class="c-modal-feedback">Email enviado com sucesso</p>
         </div>
-        <div class="c-modal-form" action="#" method="POST">
-          <form class="c-form">
+        <div class="c-modal-form">
+          <form class="c-form" action="/api/newsletter/" method="POST">
             <div class="c-form-wrap">
               <label for="name" class="c-form__label">Nome</label>
               <input type="text" id="name" class="c-form__input" required />
