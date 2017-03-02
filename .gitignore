@@ -5,6 +5,7 @@ node_modules
 
 # production
 assets/css-min
+assets/js-min
 
 # misc
 .DS_Store
