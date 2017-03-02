@@ -12,8 +12,10 @@ html {
   font-family: $b-fontFamily;
   font-size: $b-fontSize;
   line-height: $b-lineHeight;
+	overflow: hidden;
 }
 
 body {
   font-size: 100%;
+	overflow: hidden;
 }

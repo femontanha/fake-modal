@@ -8,7 +8,10 @@
 $component: c-form;
 
 .#{ $component } {
-  //
+  @include respond-to($g-m) {
+    order: 2;
+    width: 55%;
+  }
 }
 
 // -------------------------------------

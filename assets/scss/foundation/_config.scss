@@ -82,3 +82,15 @@ $b-fontSize: 16px;
 $b-lineHeight: 1.2;
 $b-fontSemiBold: 400;
 $b-fontBold: 600;
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+// ----- Grid ----- //
+
+// Breakpoints
+
+$g-s: rem(768px);
+$g-m: rem(992px);
+$g-l: rem(1200px);
