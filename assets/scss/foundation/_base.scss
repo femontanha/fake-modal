@@ -6,6 +6,8 @@
 // *************************************
 
 html {
+	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   color: $c-text;
   font-family: $b-fontFamily;
   font-size: $b-fontSize;
