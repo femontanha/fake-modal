@@ -21,7 +21,7 @@
 
       <p class="c-instructions__description">
         precisamos que uma modal abra quando o
-        usuário clicar <strong>aqui</strong>.
+        usuário clicar <strong class="js-modal">aqui</strong>.
         <br><br>
         o desenho da modal, que deve ser responsiva,
         está incluído na pasta que enviamos a você.
@@ -52,6 +52,7 @@
     <!-- ./include modal -->
     <section id="modal" class="c-modal c-modal--show">
       <div class="c-modal-content">
+        <span class="c-modal-close" aria-label="close">fechar</span>
         <div class="c-modal-header">
           <h2 class="c-modal-header__title">
             ENJUNEWS
@@ -60,7 +61,7 @@
             receba novidades do site mais legal do brasiô, coloca seu nome e email ai embaixo e manda bala :)
           </p>
         </div>
-        <div class="c-modal-form" action="javascript:void(0)" method="POST">
+        <div class="c-modal-form" action="#" method="POST">
           <form class="c-form">
             <div class="c-form-wrap">
               <label for="name" class="c-form__label">Nome</label>
@@ -83,5 +84,6 @@
       </div>
     </section>
 
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

@@ -43,6 +43,7 @@ $component: c-modal;
   margin: rem(15px);
   overflow: hidden;
   padding: rem(30px);
+  position: relative;
   z-index: 2;
 
   @include respond-to($g-s) {
@@ -51,6 +52,21 @@ $component: c-modal;
 
   @include respond-to($g-m) {
     padding: rem(60px);
+  }
+}
+
+// ----- Close ----- //
+
+.#{ $component }-close {
+  cursor: pointer;
+  font-size: 0;
+  position: absolute;
+  right: rem(30px);
+  top: rem(30px);
+
+  &:before {
+    content: 'X';
+    font-size: rem(25px);
   }
 }
 
