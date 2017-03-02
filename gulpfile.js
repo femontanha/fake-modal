@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var server = require('gulp-server-livereload');
 var normalize = require('node-normalize-scss').includePaths;
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('webserver', ['watch'], function() {
   gulp.src('./')
@@ -26,6 +27,15 @@ gulp.task('sass', function () {
 
 gulp.task('sass:watch', function () {
   gulp.watch('./assets/scss/**/*.scss', ['sass']);
+});
+
+gulp.task('prefixer', function () {
+  gulp.src('assets/css-min/app.css')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('assets/css-min'))
 });
 
 gulp.task('default', [ 'sass', 'webserver' ]);
