@@ -19,3 +19,11 @@ body {
   font-size: 100%;
 	overflow: hidden;
 }
+
+.js-modal {
+	cursor: pointer;
+
+	&:hover {
+		color: $c-main-color;
+	}
+}
