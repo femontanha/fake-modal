@@ -56,6 +56,8 @@ $c-text: #555555;
 $modal-background: rgba(0, 0, 0, 0.85);
 $modal-content-background: $c-main-color;
 $modal-text: #FFFFFF;
+$modal-feedback-background: darken($c-main-color, 15%);
+$modal-feedback-color: #FFFFFF;
 
 $formInput-background: #FFFFFF;
 $formInput-border: #EDEAE8;
